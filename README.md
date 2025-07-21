@@ -1,6 +1,6 @@
 #  Audio Genre Classifier
 
-This is a Streamlit-based web app that classifies audio files into music genres using audio features like danceability, energy, acousticness, tempo, etc. It uses a trained **K-Nearest Neighbors (KNN)** clustering model to predict the genre based on feature similarity.
+This is a Streamlit-based web app that classifies audio files into music genres using audio features like danceability, energy, acousticness, tempo, etc. It uses a trained K-Means clustering model to predict the genre based on feature similarity.
 
  # Features
  
