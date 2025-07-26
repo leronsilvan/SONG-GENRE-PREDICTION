@@ -1,5 +1,5 @@
 import streamlit as st
-import pickle
+import joblib
 from extract_features import extract_audio_features
 from huggingface_hub import hf_hub_download
 
