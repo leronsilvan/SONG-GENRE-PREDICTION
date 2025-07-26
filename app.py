@@ -1,9 +1,14 @@
 import streamlit as st
 import pickle
 from extract_features import extract_audio_features
+from huggingface_hub import hf_hub_download
 
-# Load the trained model
-model = pickle.load(open("genre_model.pkl", "rb"))
+# Download model from Hugging Face Hub
+model_path = hf_hub_download(repo_id="Leron7/song", filename="genre_model.pkl")
+
+# Load the model
+with open(model_path, "rb") as file:
+    model = joblib.load(file)
 
 # Genre label mapping
 genre_mapping = {
